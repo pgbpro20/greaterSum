@@ -26,26 +26,14 @@ class IsTriangle
     }
 
     private function isInvalidTriangle($SideA,$SideB,$SideC) {
-        if($SideA+$SideB<=$SideC || $SideB+$SideC<=$SideA || $SideA+$SideC<=$SideB)
-        {
-            return true;
-        }
-        return false;
+        return ($SideA+$SideB<=$SideC || $SideB+$SideC<=$SideA || $SideA+$SideC<=$SideB);
     }
 
     private function allSidesEqual($SideA,$SideB,$SideC) {
-        if($SideA==$SideB && $SideB==$SideC)
-        {
-            return true;
-        }
-        return false;
+        return ($SideA==$SideB && $SideB==$SideC);
     }
 
     private function twoSidesEqual($SideA,$SideB,$SideC) {
-        if($SideA==$SideB || $SideA==$SideC || $SideB==$SideC)
-        {
-            return true;
-        }
-        return false;
+        return ($SideA==$SideB || $SideA==$SideC || $SideB==$SideC);
     }
 }
