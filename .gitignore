@@ -1,12 +1,2 @@
-# Ignore everything
-*
-
-# But not these files...
-!.gitignore
-!.json
-!.md
-!.php
-
-# ...even if they are in subdirectories
-!*/
-
+# Custom rreated for GreaterSum exercises
+.idea/
